@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title> ROBOTICA - educacional </title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="img/Logo1.png" alt="" />
+          </a>
+        </div>
+
+        <ul class="navbar-nav-left">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="educacional.html">Educacional</a>
+            </li>
+            <li>
+              <a href="automacao.html">Automação</a>
+            </li>
+            <li>
+            <a href="https://guia-wcag.com/">WCAG</a>
+          </li>
+        </ul>
+
+      <div class="controls">
+        <button onclick="increaseFontSize()">A+</button>
+        <button onclick="decreaseFontSize()">A-</button>
+        <select id="colorBlindness" onchange="changeColorScheme()">
+            <option value="normal">Normal</option>
+            <option value="protanopia">Protanopia</option>
+            <option value="deuteranopia">Deuteranopia</option>
+            <option value="tritanopia">Tritanopia</option>
+        </select>
+    </div>
+     
+
+        <button type="button" class="CENTRAL" id="menu-btn">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </button>
+      </div>
+    </nav>
+    <center>
+      <div class="carrossel">
+        <div class="container">
+          <img src="img/4.png" alt="" />
+          <img src="img/5.png" alt="" />
+          <img src="img/6.png" alt="" />
+
+        </div>
+      </div>
+       <!-- Inicio do código de libras -->
+       <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+<!-- Fim do código de libras -->
+      <br>
+      <br>
+      <h1>Róbotica Educacional</h1>
+      <br>
+      <h2> A robótica educacional revoluciona o aprendizado ao combinar tecnologia e educação de maneira envolvente. Com robôs programáveis, 
+        estudantes exploram conceitos de ciência, matemática e engenharia de forma prática e interativa. Essa abordagem não só estimula o pensamento crítico e a resolução de problemas, mas também prepara os jovens para os desafios tecnológicos do futuro.</h2>
+                   </h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="img/GIF VERDE.gif" alt="">
+      <br>
+      <br>
+      <br>
+      <H1>Empresas</H1>
+    </center>
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="img/sch.png" title="Siemens" />
+        <img src="img/sie.png" title="Schneider Electric"/>
+        <img src="img/tesl.jpg" title="Tesla" />
+        <img src="img/ge.png" title="General Electric (GE)" />
+        <img src="img/rex.png" title="Bosch Rexroth" />
+        <img src="img/fanu.png" title="FANUC South America" />
+        <img src="img/emer.png" title="Emerson Automation Solutions" />
+      </div>
+    </div>
+
+    <script>
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
+    </script>
+  <script>
+      const carouselInner = document.getElementById('carousel-inner');
+      const items = document.querySelectorAll('.carousel-item');
+      let currentIndex = 0;
+
+      function showNextItem() {
+          currentIndex = (currentIndex + 1) % items.length;
+          carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+
+      setInterval(showNextItem, 5000);
+  </script>
+      <br>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+      <div>
+    <div class="divider"></div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="social">
+          <a href="https://facebook.com">
+            <img src="./img/social-facebook.svg" alt="" />
+          </a>
+          <a href="https://instagram.com">
+            <img src="./img/social-instagram.svg" alt="" />
+          </a>
+          <a href="https://youtube.com">
+            <img src="./img/social-youtube.svg" alt="" />
+          </a>
+        </div>
+        <CENTER>
+        <p>© 2024 ROBOT. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </CENTER>
+    <script src="script.js"></script>
+
+     <style>
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em; /* Tamanho grande para cabeçalho */
+    font-weight: 700; /* Peso da fonte (bold) */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+    line-height: 1.2; /* Espaçamento entre linhas */
+    color: #080707; /* Cor do texto */
+    text-align: center; /* Alinhamento centralizado */
+    margin-bottom: 20px; /* Espaço abaixo do cabeçalho */
+    border: 2px solid #080707;; /* Adiciona uma borda */
+    border-radius: 10px; /* Adiciona cantos arredondados */
+}
+
+  h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em; /* Tamanho pode ser ajustado conforme necessário */
+    font-weight: 600; /* Peso da fonte */
+    line-height: 1.2; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+}
+
+
+
+     </style>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
